@@ -6,6 +6,7 @@
     import DairyScreen from '../screens/DairyScreen';
     import { SafeAreaProvider } from 'react-native-safe-area-context';
     import { SafeAreaView, StyleSheet, Text } from 'react-native';
+    import BakerysScreen from '../screens/BakerysScreen';
 
     const Tab = createBottomTabNavigator();
 
@@ -35,6 +36,13 @@
                   component={DairyScreen}
                   options={{
                     headerShown: false,
+                  }}
+                  />
+                <Tab.Screen
+                  name="Bakery"
+                  component={BakerysScreen}
+                  options={{
+                   headerShown: false,
                   }}
                 />
               </Tab.Navigator>
